@@ -33,10 +33,92 @@
 
       <div>
         <table >
-          <tr bgcolor="yellow" width="200">
-            <th><a class="navlink" href="https://www.linkedin.com/in/leonardo-medrano-7021832b0/">Leonardo Medrano</a></th>
-            <th><a class="navlink" href="https://www.linkedin.com/in/stephanie-becerra-2bb00223b/">Stephanie Becerra</a></th>
-          </tr>
+          <div id="Fen"></div>
+          <script>
+            // Fetch data from the GitHub API
+            fetch('https://api.github.com/users/FenTheDeer')
+                .then(response => response.json()) // Parse the JSON from the response
+                .then(data => {
+                    // Get the div where we'll display the user information
+                    const userDiv = document.getElementById('Fen');
+    
+                    // Create and append an img element for the user's avatar
+                    const avatarElement = document.createElement('img');
+                    avatarElement.src = data.avatar_url;
+                    avatarElement.className = 'avatar'; // Add the 'avatar' class to the image
+                    userDiv.appendChild(avatarElement);    
+
+                    const username = document.createElement('Fen');
+                    username.textContent = `Username: ${data.login}`;
+                    userDiv.appendChild(username);
+
+                    // Create and append elements for the user's name and bio
+                    const nameElement = document.createElement('p');
+                    nameElement.textContent = `Name: ${data.name}`;
+                    userDiv.appendChild(nameElement);
+                    })
+                .catch(error => console.error('Error:', error));
+        </script>
+
+
+
+        <div id="Choco"></div>
+        <script>
+          // Fetch data from the GitHub API
+          fetch('https://api.github.com/users/Chocolatechipdogo')
+              .then(response => response.json()) // Parse the JSON from the response
+              .then(data => {
+                  // Get the div where we'll display the user information
+                  const userDiv = document.getElementById('Choco');
+
+                  // Create and append an img element for the user's avatar
+                  const avatarElement = document.createElement('img');
+                  avatarElement.src = data.avatar_url;
+                  avatarElement.className = 'avatar'; // Add the 'avatar' class to the image
+                  userDiv.appendChild(avatarElement);    
+
+                  const username = document.createElement('p');
+                  username.textContent = `Username: ${data.login}`;
+                  userDiv.appendChild(username);
+
+                  // Create and append elements for the user's name and bio
+                  const nameElement = document.createElement('p');
+                  nameElement.textContent = `Name: ${data.name}`;
+                  userDiv.appendChild(nameElement);
+              })
+              .catch(error => console.error('Error:', error));
+        </script>
+
+
+
+
+        <div id="kris"></div>
+        <script>
+          // Fetch data from the GitHub API
+          fetch('https://api.github.com/users/kristy-kumagai')
+              .then(response => response.json()) // Parse the JSON from the response
+              .then(data => {
+                  // Get the div where we'll display the user information
+                  const userDiv = document.getElementById('kris');
+
+                  // Create and append an img element for the user's avatar
+                  const avatarElement = document.createElement('img');
+                  avatarElement.src = data.avatar_url;
+                  avatarElement.className = 'avatar'; // Add the 'avatar' class to the image
+                  userDiv.appendChild(avatarElement);    
+
+                  const username = document.createElement('p');
+                  username.textContent = `Username: ${data.login}`;
+                  userDiv.appendChild(username);
+
+                  // Create and append elements for the user's name and bio
+                  const nameElement = document.createElement('p');
+                  nameElement.textContent = `Name: ${data.name}`;
+                  userDiv.appendChild(nameElement);
+                  })
+              .catch(error => console.error('Error:', error));
+        </script>
+
           <tr align="center">
             <td><img src="/images/LeonardoM.jpg" alt="Leonardo Medrano" width="200"/></td>              
             <td><img src="/images/StephanieB.jpg" alt="Stephanie Becerra" width="200"/></td>

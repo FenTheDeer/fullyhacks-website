@@ -83,3 +83,12 @@ a:link, a:visited {
   margin-top: 2rem;
   object-fit: cover;
 }
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.Fen{
+  font-size: small;
+}
