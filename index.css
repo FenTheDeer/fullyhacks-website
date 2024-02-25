@@ -89,3 +89,13 @@ a:link, a:visited {
   border-radius: 50%;
 }
 
+.gitimg {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px #ca9292
+}
+
+.neongit{
+  color: #d6d8ee;
+  filter: drop-shadow(0 0 5px #aa5454) drop-shadow(0 0 10px #6a2020) drop-shadow(0 0 20px #771414) drop-shadow(0 0 40px #ab6464);
+}
