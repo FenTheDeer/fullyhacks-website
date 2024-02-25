@@ -11,7 +11,7 @@
   <body>
     <div class="container">
         <h1 class="title">
-            <a href="/">Random Site</a>
+            <a href="/">Rave 101</a>
           </h1>
     
       <ul class="nav">
@@ -21,9 +21,7 @@
         <li>
           <a class="navlink" href="memes.html">Memes</a>
         </li>
-        <li>
-          <a class="navlink" href="github.html"> GitHub</a>
-        </li>
+        
         <li>
           <a class="navlink" href="credits.html"> Credits</a>
         </li>
@@ -48,13 +46,15 @@
 
         <br>
 
-        <!-- The search and submit functions for searching up songs. -->
-        <form>
+        <!-- The dropbox to search up songs from the library. -->
+        <div>
           <label for="song" class="text">Song:</label>  
-          <input type="text" id="song" name="song" placeholder="All by Myself">
-
+          <select type="text" id="song" name="song">
+            <option value="All By Myself">All By Myself</option>
+            <option value="Talking to the Moon">Talking to the Moon</option>
+            <option value="Boulevard of Broken Dream">Boulevard of Broken Dream</option>
           <input type="submit">
-        </form>
+        </div>
       </div>
     </div>
   </body>
