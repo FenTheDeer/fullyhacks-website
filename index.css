@@ -29,6 +29,11 @@ html {
   font-family: "Rubik";
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   display: flex;
   align-items: center;
