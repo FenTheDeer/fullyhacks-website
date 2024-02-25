@@ -25,7 +25,7 @@
 }
 
 html {
-  background-color: var(--body_bg);
+  background-color: var(--purple_hover);
   font-family: "Rubik";
 }
 
@@ -37,13 +37,19 @@ html {
 }
 
 .nav {
-  background-color: var(--purple_300);
+  background-color: var(--pink_700);
   padding: 2rem;
   width: 100%;
   display: flex;
   list-style: none;
   justify-content: space-around;
   font-size: 1.5rem;
+  box-shadow: 0 0 .2rem #a65959,
+              0 0 .2rem #632f2f,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
 }
 
 .navlink { 
