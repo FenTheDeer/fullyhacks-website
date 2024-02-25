@@ -64,6 +64,12 @@ html {
   font-size: 2rem;
 }
 
+.text {
+  color: var(--sky_300);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
 .pictureCaption {
   margin-top: 1rem;
 }

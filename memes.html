@@ -28,7 +28,30 @@
           <a class="navlink" href="credits.html"> Credits</a>
         </li>
       </ul>
-      <h1 class="title">Memes</h1>
+
+      <h2 class="text">Memes</h2>
+
+      <!-- Main division for Memes Page -->
+      <div align="center">
+        <!-- Video Player. The "meme1.mp4" is used as a placeholder for where memes/videos
+             will be played once a meme API (or database) is set up and the chosen meme can 
+             than replace it. I am thinking of the src=<song_variable>. -->
+        <video controls autoplay muted width="500">
+          <source src="meme1.mp4">
+          <source src="meme1.WebM">
+          This browser does not support HTMLS
+        </video> 
+
+        <br>
+
+        <!-- The search and submit functions for searching up memes. -->
+        <form>
+          <label for="meme" class="text">Meme:</label>  
+          <input type="text" id="meme" name="meme" placeholder="Happy Happy Happy">
+
+          <input type="submit">
+        </form>
+      </div>
     </div>
   </body>
 </html>

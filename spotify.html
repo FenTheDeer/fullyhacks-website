@@ -28,7 +28,34 @@
           <a class="navlink" href="credits.html"> Credits</a>
         </li>
       </ul>
-      <h1 class="title">Spotify</h1>
+
+      <h2 class="text">Spotify</h2>
+
+      <!-- Main division for Spotify Page -->
+      <div align="center">
+        <!-- Main image is displayed -->
+        <img src="/images/SleepyCat.png" alt="sleepy cat" height="300"/>
+
+        <br>
+        
+        <!-- Audio player. The "musice1.MP3" is used as a placeholder for where music
+             will be played once the Spotify API is set up and the chosen song can than 
+             replace it. I am thinking of the src=<song_variable>. -->
+        <audio controls> 
+          <source src="music/music1.MP3">
+          <source src="music/music1.wav">
+        </audio>
+
+        <br>
+
+        <!-- The search and submit functions for searching up songs. -->
+        <form>
+          <label for="song" class="text">Song:</label>  
+          <input type="text" id="song" name="song" placeholder="All by Myself">
+
+          <input type="submit">
+        </form>
+      </div>
     </div>
   </body>
 </html>
